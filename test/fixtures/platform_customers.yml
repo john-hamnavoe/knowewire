@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  name: Customer_One
+  reference: MyString
+  is_internal: false
+  ar_account_code: MyString
+  ap_account_code: MyString
+  platform_company: one
+  guid: 00000000-0000-0000-0000-000000000000
+
+two:
+  project: two
+  name: MyString
+  reference: MyString
+  is_internal: false
+  ar_account_code: MyString
+  ap_account_code: MyString
+  platform_company: two
+  guid: 

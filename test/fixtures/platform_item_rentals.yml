@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  project: one
+  platform_order: one  
+  quantity: 1
+  start_date: 2022-03-07
+  platform_price: one
+  platform_action: one
+  platform_container_type: one
+  is_arrears: false
+  guid: 
+
+two:
+  project: two
+  platform_order: two
+  quantity: 1
+  start_date: 2022-03-07
+  platform_price: two
+  platform_action: two
+  platform_container_type: two
+  is_arrears: false
+  guid: 

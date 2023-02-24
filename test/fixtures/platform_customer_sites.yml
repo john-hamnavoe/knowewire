@@ -1,0 +1,18 @@
+
+one:
+  project: one
+  name: MyString
+  reference: MyString
+  unqiue_customer_site_code: MyString
+  platform_customer: one
+  platform_company_outlet: one
+  guid: 
+
+two:
+  project: two
+  name: MyString
+  reference: MyString
+  unqiue_customer_site_code: MyString
+  platform_customer: two
+  platform_company_outlet: two
+  guid: 
