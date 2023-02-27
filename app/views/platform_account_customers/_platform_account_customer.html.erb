@@ -5,5 +5,5 @@
   <%= render "shared/table/table_data_cell", data: platform_account_customer.platform_customer_state&.description %>    
   <%= render "shared/table/table_data_cell", data: platform_account_customer.platform_department&.description %>     
   <%= render "shared/table/table_data_cell", data: platform_account_customer.guid %>    
-  <td class="whitespace-nowrap px-3 py-1 text-sm text-blue-500"><%= link_to 'Show', platform_account_customer_path(platform_account_customer) %></td>    
+  <td class="whitespace-nowrap px-3 py-1 text-sm text-blue-500"><%= link_to 'Show', platform_account_customer_path(platform_account_customer), target: "_top" %></td>    
 <% end %>
