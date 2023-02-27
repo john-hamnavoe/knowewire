@@ -1,5 +1,9 @@
 # README
 
+## Introduction 
+
+This is updated version of [Knowe](https://github.com/john-hamnavoe/knowe), this version has stimulus_reflex and all_futures removed. It worked well but tried to remove some dependancies and go to hotwire stack. With hotwire the filters are top of table columns have been bit more problematic (probably better to move filtering to outside the table in the future). 
+
 ## Using Template
 
 Steps to use template:
@@ -16,18 +20,16 @@ Steps to use template:
 
 * Run `rails db:create db:migrate`
 
-* Run `rails dev:cache` (for stimulus reflex)
-
-* Add remote original knowe: 
-  * `git remote add knowe git@github.com:john-hamnavoe/knowe.git`
+* Add remote original knowewire: 
+  * `git remote add knowewire git@github.com:john-hamnavoe/knowewire.git`
 
 ## Merging Changes from Template
 
 Merge changes from template:
 
-* `git fetch knowe`
+* `git fetch knowewire`
 
-* `git merge knowe/main --allow-unrelated-histories`
+* `git merge knowewire/main --allow-unrelated-histories`
 
 * `rails db:migrate` (to apply new database changes)
 
