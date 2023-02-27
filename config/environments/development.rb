@@ -4,8 +4,6 @@ Rails.application.configure do
   config.action_controller.default_url_options = {host: "localhost", port: 3000}
   config.action_mailer.default_url_options = {host: "localhost", port: 3000}
 
-  config.session_store :cache_store
-
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
