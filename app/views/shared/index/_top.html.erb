@@ -8,7 +8,7 @@
           <%= search_s_icon %>
         </div>
         <% unless hide_search ||= false %>
-          <%= form.search_field search_field, autocomplete: "off",  data: { reflex:"debounced:input->Index#search" }, class: 'rounded-lg  input-search',  placeholder: "Search..." %>
+          <%= form.search_field search_field, autocomplete: "off", oninput: "this.form.requestSubmit()", class: 'rounded-lg  input-search',  placeholder: "Search..." %>
         <% end %>
       </div>
     </div>

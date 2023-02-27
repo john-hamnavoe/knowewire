@@ -6,21 +6,16 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 import NestedFormController from "./nested_form_controller"
-import StimulusReflex from 'stimulus_reflex'
-import consumer from '../channels/consumer'
-import controller from '../controllers/application_controller'
-import CableReady from 'cable_ready'
+import Autofocus from "./autofocus_controller"
+import Autosearch from "./autosearch_controller"
 import debounced from 'debounced' 
 
 debounced.initialize()
 
 application.register("hello", HelloController)
 application.register("nested-form", NestedFormController)
-
-application.consumer = consumer
-StimulusReflex.initialize(application, { controller, isolate: true })
-StimulusReflex.debug = window.debugMode
-CableReady.initialize({ consumer })
+application.register("autofocus", Autofocus)
+application.register("autosearch", Autosearch)
 
 import { Dropdown, Modal, Tabs, Popover, Toggle, Slideover } from "tailwindcss-stimulus-components"
 application.register('dropdown', Dropdown)

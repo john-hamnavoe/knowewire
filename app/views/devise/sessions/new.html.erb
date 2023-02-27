@@ -1,6 +1,6 @@
 <% content_for :devise_form do %>
   <h2 class="pt-4 mb-8 text-4xl font-bold heading">Log in</h2>
-  <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {data: { turbo: false}}) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
     <div class="input-group">
       <%= f.label :email, class:"label" %>

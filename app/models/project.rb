@@ -1,7 +1,6 @@
 class Project < ApplicationRecord
   include PlatformDefaults
 
-  broadcasts_to ->(project) { :projects }
   belongs_to :user
   
   validates :name, presence: true, length: { maximum: 50 }

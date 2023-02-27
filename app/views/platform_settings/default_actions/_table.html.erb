@@ -11,13 +11,13 @@
 
     </tr>
     <tr>
-      <%= render "shared/table/search_table_header", form: form, search_field: "platform_service_description_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "platform_action_description_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "platform_pricing_basis_description_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "platform_vat_description_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "platform_material_class_description_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "platform_uom_description_cont" %>                              
-      <%= render "shared/table/search_table_header", form: form, search_field: "guid_eq" %>         
+      <%= render "shared/table/search_table_header", form: form, search_field: "platform_service_description_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "platform_action_description_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "platform_pricing_basis_description_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "platform_vat_description_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "platform_material_class_description_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "platform_uom_description_cont", last_changed_field: last_changed_field %>                              
+      <%= render "shared/table/search_table_header", form: form, search_field: "guid_eq", last_changed_field: last_changed_field %>         
 
     </tr>    
   </thead>

@@ -1,7 +1,10 @@
+
+<% data = local_assigns[:last_changed_field] ? search_field == last_changed_field ? {controller: "autofocus autosearch"} : {controller: "autosearch"} : {controller: "autosearch"} %>
+
 <% if search_field.nil? %>
   <th scope="col" class="pb-1 px-3 text-left text-sm font-semibold text-gray-900"> </th>
 <% elsif search_field.include?("_true") %>
-  <th scope="col" class="pb-1 px-3 text-left text-sm font-semibold text-gray-900">  <%= form.check_box search_field, autocomplete: "off",  data: { reflex:"debounced:input->Index#search", reflex_serialize_form: "true" }, class: 'input-sm' %> </th>
+  <th scope="col" class="pb-1 px-3 text-left text-sm font-semibold text-gray-900">  <%= form.check_box search_field, autocomplete: "off", onchange: "this.form.requestSubmit()", class: 'input-sm' %> </th>
 <% else %>
-  <th scope="col" class="pb-1 px-3 text-left text-sm font-semibold text-gray-900">  <%= form.search_field search_field, autocomplete: "off",  data: { reflex:"debounced:input->Index#search", reflex_serialize_form: "true" }, class: 'input-sm' %> </th>
+  <th scope="col" class="pb-1 px-3 text-left text-sm font-semibold text-gray-900">  <%= form.search_field search_field, autocomplete: "off", class: 'input-sm', data: data %> </th>
 <% end %>

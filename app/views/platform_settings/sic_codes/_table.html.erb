@@ -10,12 +10,12 @@
 
     </tr>
     <tr>
-      <%= render "shared/table/search_table_header", form: form, search_field: "code_2007_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "description_2007_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "code_2003_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "description_2003_cont" %>
-      <%= render "shared/table/search_table_header", form: form, search_field: "is_deleted_true" %>                        
-      <%= render "shared/table/search_table_header", form: form, search_field: "guid_eq" %>         
+      <%= render "shared/table/search_table_header", form: form, search_field: "code_2007_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "description_2007_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "code_2003_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "description_2003_cont", last_changed_field: last_changed_field %>
+      <%= render "shared/table/search_table_header", form: form, search_field: "is_deleted_true", last_changed_field: last_changed_field %>                        
+      <%= render "shared/table/search_table_header", form: form, search_field: "guid_eq", last_changed_field: last_changed_field %>         
 
     </tr>    
   </thead>
