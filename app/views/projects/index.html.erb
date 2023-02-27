@@ -2,7 +2,7 @@
 <div class="w-full">
   <% frame = "projects" %>
   <%= search_form_for @query, method: :get, data: { turbo_frame: frame, turbo_action: "advance" } do |f| %>  
-    <%= render partial: "shared/index/top", locals: { new_path: new_project_path, search_field: "name_or_base_url_or_version_cont", form: f, filter: @filter } %>
+    <%= render partial: "shared/index/top", locals: { new_path: new_project_path, search_field: "name_or_base_url_or_version_cont", form: f } %>
       <div class="min-w-full">    
         <%= turbo_frame_tag frame do %>    
           <%= render partial: "table", layout: "shared/index/table", locals: { current_sort: params[:query].try(:[], :s), form: f, frame: frame, last_changed_field: @last_changed_field } %>

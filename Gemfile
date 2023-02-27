@@ -93,5 +93,3 @@ gem "pagy", "~> 3.5"
 gem "ransack", "~> 3.2"
 gem "sysrandom"
 gem "tailwindcss-rails", "~> 2.0"
-
-gem 'all_futures', github: 'leastbad/all_futures', branch: 'master'

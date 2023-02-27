@@ -1,16 +1,3 @@
-GIT
-  remote: https://github.com/leastbad/all_futures.git
-  revision: 925d64740f9299b4c7d24b88543ca469685a0ccd
-  branch: master
-  specs:
-    all_futures (1.0.3)
-      activeentity (~> 6.3)
-      activemodel (>= 4.0)
-      activerecord (>= 4.0)
-      activesupport (>= 4.0)
-      kredis (~> 1.0)
-      ulid (~> 1.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -59,9 +46,6 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activeentity (6.3.0)
-      activemodel (>= 6.0, < 8)
-      activesupport (>= 6.0, < 8)
     activejob (7.0.4.2)
       activesupport (= 7.0.4.2)
       globalid (>= 0.3.6)
@@ -92,9 +76,6 @@ GEM
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
-    cable_ready (5.0.0.pre8)
-      rails (>= 5.2)
-      thread-local (>= 1.1.0)
     capybara (3.38.0)
       addressable
       matrix
@@ -280,19 +261,12 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
-    stimulus_reflex (3.5.0.pre8)
-      cable_ready (= 5.0.0.pre8)
-      nokogiri
-      rack
-      rails (>= 5.2)
-      redis
     sysrandom (1.0.5)
     tailwindcss-rails (2.0.23-arm64-darwin)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.23-x86_64-darwin)
       railties (>= 6.0.0)
     thor (1.2.1)
-    thread-local (1.1.0)
     timeout (0.3.2)
     turbo-rails (1.3.3)
       actionpack (>= 6.0.0)
@@ -300,7 +274,6 @@ GEM
       railties (>= 6.0.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    ulid (1.3.0)
     unicode-display_width (2.4.2)
     vcr (6.1.0)
     warden (1.2.9)
@@ -332,9 +305,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-import
-  all_futures!
   bootsnap
-  cable_ready (= 5.0.0.pre8)
   capybara
   debug
   devise
@@ -359,7 +330,6 @@ DEPENDENCIES
   simplecov
   sprockets-rails
   stimulus-rails
-  stimulus_reflex (= 3.5.0.pre8)
   sysrandom
   tailwindcss-rails (~> 2.0)
   turbo-rails
